@@ -1,15 +1,6 @@
 /* eslint-disable no-undef */
-export interface CacheStore {
-  delete: (key: string) => void
-}
-
-export class LocalSavePurchases {
-  constructor (private readonly cacheStore: CacheStore) {}
-
-  async save (): Promise<void> {
-    this.cacheStore.delete('purchases')
-  }
-}
+import { CacheStore } from '@/data/protocols/cache'
+import { LocalSavePurchases } from '@/data/usecases'
 
 export class CacheStoreSpy implements CacheStore {
   deleteCallsCount = 0
