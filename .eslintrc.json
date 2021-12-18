@@ -15,6 +15,8 @@
         "@typescript-eslint"
     ],
     "rules": {
-      "no-redeclare": "off"
+      "no-redeclare": "off",
+      "no-new": "off",
+      "no-useless-constructor": "off"
     }
 }
