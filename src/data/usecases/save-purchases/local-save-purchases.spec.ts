@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import { CacheStore } from '@/data/protocols/cache'
 import { LocalSavePurchases } from '@/data/usecases'
-import { SavePurchases } from '@/domain'
+import { SavePurchases } from '@/domain/usecases'
 
 export class CacheStoreSpy implements CacheStore {
   deleteCallsCount = 0
