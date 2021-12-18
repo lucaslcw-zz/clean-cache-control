@@ -45,7 +45,7 @@ describe('LocalLoadPurchases', () => {
     expect(purchases).toEqual(cacheStore.fetchResult.value)
   })
 
-  test('Should return a list of purchases if cache is expired', async () => {
+  test('Should return an empty list if cache is expired', async () => {
     const currentDate = new Date()
     const timestamp = getCacheExpirationDate(currentDate)
     timestamp.setSeconds(timestamp.getSeconds() - 1)
