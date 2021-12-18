@@ -17,6 +17,7 @@
     "rules": {
       "no-redeclare": "off",
       "no-new": "off",
-      "no-useless-constructor": "off"
+      "no-useless-constructor": "off",
+      "import/export": "off"
     }
 }
